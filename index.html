@@ -1,0 +1,36 @@
+
+
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <form  name="calculator" id="cal">
+                <div class="calculator">
+                    <input class="value" type="text" name="text" id="text" readonly="">
+                    <div class="val " onclick="document.calculator.text.value=''">AC</div>
+                    <div class="val " onclick="document.calculator.text.value=calculator.text.value.substring(0, calculator.text.value.length- 1)">DEL</div>
+                    <div class="val " onclick="document.calculator.text.value+='%'">%</div>
+                    <div class="val " onclick="document.calculator.text.value+='/'">/</div>
+                    <div class="val" onclick="document.calculator.text.value+='7'">7</div>
+                    <div class="val" onclick="document.calculator.text.value+='8'">8</div>
+                    <div class="val" onclick="document.calculator.text.value+='9'">9</div>
+                    <div class="val " onclick="document.calculator.text.value+='*'">*</div>
+                    <div class="val" onclick="document.calculator.text.value+='4'">4</div>
+                    <div class="val" onclick="document.calculator.text.value+='5'">5</div>
+                    <div class="val" onclick="document.calculator.text.value+='6'">6</div>
+                    <div class="val " onclick="document.calculator.text.value+='-'">-</div>
+                    <div class="val" onclick="document.calculator.text.value+='1'">1</div>
+                    <div class="val" onclick="document.calculator.text.value+='2'">2</div>
+                    <div class="val" onclick="document.calculator.text.value+='3'">3</div>
+                    <div class="val " onclick="document.calculator.text.value+='+'">+</div>
+                    <div class="val" onclick="document.calculator.text.value+='00'">00</div>
+                    <div class="val" onclick="document.calculator.text.value+='0'">0</div>
+                    <div class="val" onclick="document.calculator.text.value+='.'">.</div>
+                    <div class="val " onclick="document.calculator.text.value=eval(calculator.text.value)">=</div>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
